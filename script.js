@@ -168,7 +168,7 @@ function animate() {
 
 // Initial fade-in for scrollButton
 scrollButton.style.opacity = '0';
-scrollButton.style.transition = 'opacity 1000ms ease-in-out';
+scrollButton.style.transition = 'opacity 2000ms ease-in-out';
 setTimeout(() => {
     scrollButton.style.opacity = '1';
 }, 100);
