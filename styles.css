@@ -11,8 +11,6 @@ body, html {
   height: 100%; /* Ensure 100% height for fullscreen */
 }
 
-
-
 /* Fullscreen container styles */
 #bg1, #bg2, #bg3 {
   position: absolute;
@@ -114,7 +112,7 @@ body, html {
   z-index: 4;
 }
 
-/* Scroll button */
+/* Scroll button (icon1) */
 #scroll-button {
   position: fixed;
   top: 85%;
@@ -123,6 +121,24 @@ body, html {
   width: 50px;
   cursor: pointer;
   z-index: 5;
+  transition: opacity 1s ease-in-out; /* Smooth show/hide transition */
+  opacity: 1; /* Default visible */
+}
+
+/* Top button (icon2) */
+#scroll-button.top {
+  opacity: 0; /* Hidden initially */
+}
+
+img#scroll-button.top {
+  position: fixed;
+  top: 85%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  cursor: pointer;
+  z-index: 5;
+  transition: opacity 1s ease-in-out; /* Smooth show/hide transition */
 }
 
 
