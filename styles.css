@@ -1,0 +1,147 @@
+/* General reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  overflow-x: hidden;
+  overflow-y: auto; /* Enable vertical scroll */
+  height: 100%; /* Ensure 100% height for fullscreen */
+}
+
+
+
+/* Fullscreen container styles */
+#bg1, #bg2, #bg3 {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+#bg1 { top: 0; }
+#bg2 { top: 100vh; }
+#bg3 { top: 200vh; }
+
+/* Overlay elements */
+.transparent-box {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  pointer-events: none;
+}
+
+#section1 { top: 0; }
+#section2 { top: 100vh; }
+#section3 { top: 200vh; }
+
+/* Black background section */
+#black-background {
+  position: absolute;
+  top: 300vh; /* Positioned directly below bg3 */
+  width: 100%;
+  height: 3000px; /* Set to 3000px height as requested */
+  background-color: black; /* Black background color */
+  z-index: 0; /* Ensure it remains in the background */
+}
+
+/* Fullscreen canvas container for 3D model */
+#canvas-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 1; /* Ensure 3D model is on top of backgrounds */
+}
+
+/* Centered image */
+#ingr {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%; /* Keeps the size as requested */
+  opacity: 0; /* Start with transparent */
+  transition: opacity 1.5s ease-in-out;
+  z-index: 2; /* Above the 3D canvas */
+}
+
+/* Partial white overlay */
+#end-overlay {
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  height: 40vh;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(8px);
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 15px;
+  opacity: 0; /* Start hidden */
+  transition: opacity 0.8s ease-in-out;
+  z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+#overlay-text {
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: bold;
+  font-size: 1.2em;
+  color: white;
+  line-height: 1.5em;
+  max-width: 90%; /* Prevents text from going edge-to-edge */
+}
+
+/* Footer */
+#footer {
+  background-color: black;
+  color: white;
+  font-size: 0.8em;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  z-index: 4;
+}
+
+/* Scroll button */
+#scroll-button {
+  position: fixed;
+  top: 85%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50px;
+  cursor: pointer;
+  z-index: 5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

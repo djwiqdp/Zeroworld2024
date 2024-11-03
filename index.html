@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zero World</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="fav.svg" type="image/svg+xml">
+
+</head>
+<body>
+    <!-- Background video and images -->
+    <video id="bg1" src="bg1.mp4" autoplay muted loop></video>
+    <img id="bg2" src="bg2.png" alt="Background 2">
+    <img id="bg3" src="bg3.png" alt="Background 3">
+
+    <!-- Transparent divs for 3D object positioning -->
+    <div id="section1" class="transparent-box"></div>
+    <div id="section2" class="transparent-box"></div>
+    <div id="section3" class="transparent-box"></div>
+
+    <!-- New black background div below bg3 -->
+    <div id="black-background"></div>
+
+    <!-- Three.js Canvas for 3D can -->
+    <div id="canvas-container"></div>
+
+    <!-- Scroll-down button -->
+    <img id="scroll-button" src="icon1.png" alt="Scroll Down Button">
+
+    <!-- Centered image that appears over bg3 -->
+    <img id="ingr" src="ingr1.png" alt="Center Image">
+    
+
+
+    <!-- White rectangle overlay for end scroll with explanation text -->
+     <div id="end-overlay">
+        <div id="overlay-text">
+        이 웹사이트는 제로 음료의 긍정적인 이미지 뒤에 숨겨진 성분과 잠재적 부작용을 비판적으로 조명하기 위해 만들어졌습니다.
+        제로 음료가 건강한 대안으로 홍보되지만, 다양한 대체당이 포함되어 있으며 일부는 소비자에게 부정적인 영향을 미칠 수 있습니다.
+        광고가 강조하는 장점과 현실 사이의 간극을 드러내어, 소비자가 '제로' 트렌드를 비판적으로 바라보고 성찰할 기회를 제공하는 것을 목표로 합니다.
+    </div></div>
+
+    <!-- Three.js and GLTFLoader -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="script.js"></script>
+</body>
+
+<!-- Footer with black background and small white text -->
+<footer id="footer">
+    @2024 Digital Publishing Zero World
+</footer>
+
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
